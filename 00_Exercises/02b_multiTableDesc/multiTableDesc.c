@@ -5,7 +5,7 @@ void PrintUsageMessage(void);
 void PrintMultiTable(int);
 
 const int lowerLimit = 1;
-const int upperLimit = 10;
+const int upperLimit = 20;
 
 int main( int argc, char* argv[] )
 {
@@ -41,7 +41,7 @@ void PrintUsageMessage(void){
 void PrintMultiTable( int tableLimit ){
 	for(int i = 1; i <= tableLimit; i++)
 	{
-		for(int j = 1; j <= tableLimit; j++ )
+		for(int j = tableLimit; j >= 1; j-- )
 		{
 			printf("%d\t", i*j);
 		}
